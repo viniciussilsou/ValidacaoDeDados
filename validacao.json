@@ -16,5 +16,17 @@
     },
     {
         "cep": null
+    },
+    {
+        "cpf": "403.868.118-13",
+        "cnpj": "12.345.345/0001-20",
+        "e-mail": "vtr2@ererer",
+        "cep": null
+    },    dados = {'cep' : cep}
+    {
+        "cpf": "345.345.234-12",
+        "cnpj": "23.234.234/0001-20",
+        "e-mail": "fggffg@dfffdf",
+        "cep": "67844250"
     }
 ]
