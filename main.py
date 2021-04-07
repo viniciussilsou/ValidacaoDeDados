@@ -3,11 +3,16 @@ import validarDados
 
 
 def main():
-    cnpj = validarDados.validarCnpj()
-    cpf = validarDados.validarcpf()
-    dados = {'cpf': cpf, 'cnpj':cnpj}
-    listadedados = []
-    listadedados.append(dados)
-    gravarDadosJson(listadedados)
+    #email = validarDados.validarEmail()
+    #cnpj = validarDados.validarCnpj()
+    #cpf = validarDados.validarcpf()
+    cep = validarDados.validarCEP()
+
+    #dados = {'cpf': cpf, 'cnpj': cnpj, 'e-mail': email, 'cep': cep}
+    dados = {'cep' : cep}
+    jsonlist = abrirjson()
+    jsonlist.append(dados)
+
+    gravarDadosJson(jsonlist)
 
 main()

@@ -22,6 +22,30 @@ def validarCnpj():
         cnpj = ("{}.{}.{}/{}-{}".format(cnpj[:2],cnpj[2:5],cnpj[5:8],cnpj[8:12],cnpj[12:14]))
         return cnpj
 
+def validarEmail():
+
+    email = str(input("Digite E-mail:\n"))
+
+    if '@' in email:
+        return email
+    else:
+        print("E-mail INVÁLIDO !\n")
+        validarEmail()
+
+def validarCEP():
+
+    cep = int(input("Digite CEP:\n"))
+
+    if type(cep) == int:
+        cep = str(cep)
+
+        if len(cep) != 8:
+            print("CEP INVALIDO !\n")
+            validarCEP()
+        else:
+            return cep
+    else:
+        print("Digite somente Números ! \n")
 
 
 
