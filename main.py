@@ -3,12 +3,11 @@ import validarDados
 
 
 def main():
-
+    cnpj = validarDados.validarCnpj()
     cpf = validarDados.validarcpf()
-    dados = {'cpf': cpf}
+    dados = {'cpf': cpf, 'cnpj':cnpj}
     listadedados = []
     listadedados.append(dados)
-    print(listadedados)
     gravarDadosJson(listadedados)
 
 main()
