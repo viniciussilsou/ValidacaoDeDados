@@ -1,4 +1,4 @@
-from jsonFile import abrirjson,gravarDadosJson
+from arquivoJson import abrirjson,gravarDadosJson
 import validarDados
 
 
